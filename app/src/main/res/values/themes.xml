@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FinancialCalculatorPro" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.FinancialCalculatorPro" parent="Base.Theme.FinancialCalculatorPro" />
+
+    <style name="toolbar">
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="textView">
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="amount">
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="button">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="editTax">
+        <item name="android:textColor">@color/colorDarkGray</item>
+        <item name="android:background">@null</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="header">
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="labelText">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:background">@drawable/bg_text_view</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="layoutEditText">
+        <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+    <style name="radioText">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/radio_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="result">
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="resultLayoutMain">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="resultText">
+        <item name="android:textColor">@color/colorCyan</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="resultTextView">
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="spinerText">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="spinner">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="title">
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+    <style name="titleText">
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="CustomBottomSheetDialogTheme2">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustUnspecified|stateHidden</item>
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle1</item>
+    </style>
+    <style name="CustomBottomSheetStyle1">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="behavior_peekHeight">@dimen/_600sdp</item>
+    </style>
+    <style name="IAPTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+</resources>

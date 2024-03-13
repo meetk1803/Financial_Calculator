@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ScrollView android:id="@+id/rootLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/llButton" android:layout_below="@+id/toolBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/future" style="@style/textView"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_8sdp" style="@style/layoutEditText">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:text="@string/dollar" android:layout_weight="0.1" style="@style/textView"/>
+                        <EditText android:id="@+id/futureValue" android:layout_width="0dp" android:layout_height="@dimen/_30sdp" android:maxLength="7" android:layout_weight="1" android:inputType="numberDecimal" style="@style/editTax"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/number" style="@style/textView"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutEditText">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:text="@string/dollar" android:layout_weight="0.1" style="@style/textView"/>
+                        <EditText android:id="@+id/periods" android:layout_width="0dp" android:layout_height="@dimen/_30sdp" android:maxLength="4" android:layout_weight="1" android:inputType="number" style="@style/editTax"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/disc" style="@style/textView"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_8sdp" style="@style/layoutEditText">
+                        <EditText android:id="@+id/rate" android:paddingLeft="@dimen/_6sdp" android:layout_width="0dp" android:layout_height="@dimen/_30sdp" android:maxLength="5" android:layout_weight="1" android:inputType="numberDecimal" style="@style/editTax"/>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_4sdp" android:text="@string/percentage" android:layout_weight="0.1" style="@style/textView"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@+id/llResult" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_6sdp" android:layout_marginTop="@dimen/_6sdp" android:layout_marginRight="@dimen/_6sdp" android:layout_marginBottom="@dimen/_6sdp" app:cardCornerRadius="@dimen/_8sdp" app:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/resultLayoutMain">
+                    <TextView android:layout_gravity="center_horizontal" android:padding="@dimen/_4sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/result" style="@style/result"/>
+                    <View android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp"/>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_result" android:padding="@dimen/_6sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_weight="1">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/present" style="@style/resultTextView"/>
+                            <TextView android:id="@+id/txtPresentValue" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/resultText"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_result" android:padding="@dimen/_6sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_weight="1">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/interest" style="@style/resultTextView"/>
+                            <TextView android:id="@+id/txtTotalInterest" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/resultText"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:id="@+id/graphlayot" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.github.mikephil.charting.charts.PieChart android:id="@+id/piechart" android:layout_width="match_parent" android:layout_height="@dimen/_200sdp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llButton" android:background="@color/colorWhite" android:paddingLeft="@dimen/_8sdp" android:paddingTop="@dimen/_8sdp" android:paddingRight="@dimen/_8sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/banner1">
+        <Button android:id="@+id/btnShare" android:layout_width="0dp" android:layout_height="@dimen/_30sdp" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:text="@string/share_result" android:layout_weight="1" style="@style/button"/>
+        <Button android:id="@+id/btnCalculate" android:layout_width="0dp" android:layout_height="@dimen/_30sdp" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:text="@string/calculate" android:layout_weight="1" style="@style/button"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/banner1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

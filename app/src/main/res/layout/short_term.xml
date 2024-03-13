@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credit" style="@style/textView"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_8sdp" style="@style/layoutEditText">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:text="@string/dollar" android:layout_weight="0.1" style="@style/textView"/>
+                    <EditText android:id="@+id/etCreditCard" android:layout_width="0dp" android:layout_height="@dimen/_30sdp" android:maxLength="7" android:layout_weight="1" android:inputType="numberDecimal" style="@style/editTax"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/loan" style="@style/textView"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutEditText">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:text="@string/dollar" android:layout_weight="0.1" style="@style/textView"/>
+                    <EditText android:id="@+id/etShortTermLoan" android:layout_width="0dp" android:layout_height="@dimen/_30sdp" android:maxLength="7" android:layout_weight="1" android:inputType="numberDecimal" style="@style/editTax"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/linearCouponrate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/outstanding" style="@style/textView"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_8sdp" style="@style/layoutEditText">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:text="@string/dollar" android:layout_weight="0.1" style="@style/textView"/>
+                    <EditText android:id="@+id/etOutstandingTaxes" android:layout_width="0dp" android:layout_height="@dimen/_30sdp" android:maxLength="7" android:layout_weight="1" android:inputType="numberDecimal" style="@style/editTax"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/other" style="@style/textView"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/layoutEditText">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:text="@string/dollar" android:layout_weight="0.1" style="@style/textView"/>
+                    <EditText android:id="@+id/etShortTermOther" android:layout_width="0dp" android:layout_height="@dimen/_30sdp" android:maxLength="7" android:layout_weight="1" android:inputType="numberDecimal" style="@style/editTax"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="compound_array">
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Semi-Annually</item>
+        <item>Annually</item>
+    </array>
+    <array name="investment_array">
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Annually</item>
+    </array>
+    <array name="payment_array">
+        <item>None</item>
+        <item>Annually</item>
+        <item>Quarterly</item>
+        <item>Semi-Annually</item>
+        <item>Monthly</item>
+    </array>
+    <array name="rent_array">
+        <item>Monthly</item>
+        <item>Annually</item>
+        <item>Weekly</item>
+    </array>
+    <array name="terms_array">
+        <item>Mo</item>
+        <item>Yr</item>
+    </array>
+</resources>
